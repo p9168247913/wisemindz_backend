@@ -28,6 +28,6 @@ app.use('/staff', staffRouter);
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
 app.listen(process.env.PORT, (err) => {
-    if (err) return console.log(`con not listen to port: ${process.env.PORT}`);
+    if (err) return console.log(`can not listen to port: ${process.env.PORT}`);
     console.log(`server is listening to port: ${process.env.PORT}/`);
 });
